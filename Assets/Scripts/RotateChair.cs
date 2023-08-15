@@ -7,19 +7,21 @@ public class RotateChair : MonoBehaviour
 
     public GameObject center;
     public GameObject indicator;
+    public GameObject indicatorF;
 
-    private Vector3 offset = Vector3.zero;
+
+    private float angle = 0f;
+    public float speed = 0f;
+    private float initialPosition = 0f;
 
     private void Start()
     {
-        offset = center.transform.position - indicator.transform.position;
+        initialPosition = indicator.transform.position.y - center.transform.position.y;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float distance = center.transform.position.z - indicator.transform.position.z - offset.z;
-        Debug.Log(distance);
-        transform.Rotate(0, distance * Time.deltaTime, 0);
+        transform.Rotate(new Vector3(0f, speed * Time.deltaTime, 0f));
     }
 }
