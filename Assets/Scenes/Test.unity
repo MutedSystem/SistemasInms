@@ -604,6 +604,7 @@ GameObject:
   - component: {fileID: 1130066725}
   - component: {fileID: 1130066724}
   - component: {fileID: 1130066728}
+  - component: {fileID: 1130066729}
   m_Layer: 0
   m_Name: Center
   m_TagString: Untagged
@@ -704,6 +705,28 @@ MonoBehaviour:
   indicator: {fileID: 888230747}
   indicatorF: {fileID: 1602299269}
   speed: 0
+--- !u!114 &1130066729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1130066723}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a331805347588fe4a8161c8875d24396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ServerAddress: 127.0.0.1
+  LocalAddress: 127.0.0.1
+  ConnectionType: 0
+  SkeletonCoordinates: 0
+  BoneNamingConvention: 0
+  DrawMarkers: 0
+  DrawCameras: 0
+  DrawForcePlates: 0
+  RecordOnPlay: 0
+  SkipDataDescriptions: 0
 --- !u!1 &1602299269
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,6 +739,7 @@ GameObject:
   - component: {fileID: 1602299272}
   - component: {fileID: 1602299271}
   - component: {fileID: 1602299270}
+  - component: {fileID: 1602299274}
   m_Layer: 0
   m_Name: IndicadorF
   m_TagString: Untagged
@@ -800,6 +824,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1602299274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602299269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77bc200897df4f4483b478b598b0c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StreamingClient: {fileID: 0}
+  RigidBodyId: 1
+  NetworkCompensation: 1
 --- !u!1 &1794591837
 GameObject:
   m_ObjectHideFlags: 0
@@ -895,6 +934,7 @@ GameObject:
   - component: {fileID: 1977321559}
   - component: {fileID: 1977321558}
   - component: {fileID: 1977321557}
+  - component: {fileID: 1977321561}
   m_Layer: 0
   m_Name: Indicador
   m_TagString: Untagged
@@ -980,6 +1020,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1977321561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1977321556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77bc200897df4f4483b478b598b0c51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StreamingClient: {fileID: 0}
+  RigidBodyId: 1
+  NetworkCompensation: 1
 --- !u!1 &2012013916
 GameObject:
   m_ObjectHideFlags: 0
