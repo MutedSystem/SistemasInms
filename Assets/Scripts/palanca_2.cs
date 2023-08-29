@@ -23,7 +23,7 @@ public class palanca_2 : MonoBehaviour
         Vector3 movimiento = transform.position - ultimaPosicion;
 
         // Comprueba si hay movimiento
-        if (movimiento.magnitude > 0)
+        if (movimiento.magnitude > 0.05)
         {
             Debug.Log("Boton Movido");
             MoverObjeto(movimiento.normalized); // Mueve el objeto en la dirección del movimiento
